@@ -1,0 +1,29 @@
+#chatwindow {
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+  }
+  
+  #heading {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+  }
+  
+  .auth-section {
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .login-button {
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  

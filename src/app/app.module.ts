@@ -8,7 +8,8 @@ import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

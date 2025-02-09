@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+import { MsalService } from '@azure/msal-angular';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  standalone: false // Set to false since we're using NgModule
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent { }
+export class AppComponent {
+  constructor(private msalService: MsalService) {
+    const account = this.msalService.instance.getActiveAccount();
+    if (!account) {
+      this.msalService.loginRedirect();  // ✅ Redirect to login if not signed in
+    }
+  }
+}

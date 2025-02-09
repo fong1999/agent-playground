@@ -70,3 +70,13 @@ rm -rf node_modules package-lock.json
 npm install
 ng serve
 ```
+
+## Troubleshoot
+
+```
+npm list @angular/compiler
+```
+
+```
+npm install @angular/compiler --save-dev
+```

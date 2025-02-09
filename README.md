@@ -66,9 +66,10 @@ export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 ## Clean
 
 ```
-rm -rf node_modules package-lock.json
-npm install
-ng serve
+rm -rf node_modules package-lock.json  # ✅ Remove old dependencies
+npm install                            # ✅ Reinstall fresh dependencies
+
+ng serve --open
 ```
 
 ## Troubleshoot

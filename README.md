@@ -87,3 +87,12 @@ npm install @angular/compiler --save-dev
 ✅ Check for auto-generated files	Look in src/app/generated/ or src/app/components/widgets/org-chart/
 ✅ Clear Angular cache & reinstall	Run rm -rf node_modules package-lock.json .angular/cache && npm install && ng serve --open
 ✅ Check for duplicate imports	Ensure app.module.ts only imports OrgChartComponent once
+
+## How to use HTTPS
+
+```
+openssl req -x509 -newkey rsa:2048 -keyout localhost.key -out localhost.crt -days 365 -nodes -subj "/CN=localhost"
+
+ng serve --ssl --ssl-cert ./localhost.crt --ssl-key ./localhost.key --open
+
+```

@@ -5,8 +5,7 @@ import { AuthenticationResult } from '@azure/msal-browser';
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.component.html',
-  styleUrls: ['./chat.component.scss'],
-  standalone: false
+  styleUrl: './chat.component.scss',
 })
 export class ChatComponent implements OnInit {
   userName: string = 'Not logged in';

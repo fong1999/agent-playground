@@ -66,6 +66,7 @@ export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 ## Clean
 
 ```
+rm -rf node_modules package-lock.json .angular/cache
 rm -rf node_modules package-lock.json  # ✅ Remove old dependencies
 npm install                            # ✅ Reinstall fresh dependencies
 
@@ -81,3 +82,8 @@ npm list @angular/compiler
 ```
 npm install @angular/compiler --save-dev
 ```
+## Fix	How to Check?
+
+✅ Check for auto-generated files	Look in src/app/generated/ or src/app/components/widgets/org-chart/
+✅ Clear Angular cache & reinstall	Run rm -rf node_modules package-lock.json .angular/cache && npm install && ng serve --open
+✅ Check for duplicate imports	Ensure app.module.ts only imports OrgChartComponent once

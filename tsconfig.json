@@ -23,6 +23,7 @@
     "strictTemplates": true,
     "fullTemplateTypeCheck": true,
     "preserveWhitespaces": false,
-    "compilationMode": "partial"
+    "compilationMode": "partial",
+    "strictStandalone": true
   }
 }
